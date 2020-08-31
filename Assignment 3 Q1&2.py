@@ -45,7 +45,7 @@ def main():
     for k in range(n):
         Parpivot(A, B)
         GaussJordan(A, B)
-        #Soln = [3.0 1.0 -2.0]
+        
     print("Solution of 1st set of equations",B)
 
     #2nd set of equations
@@ -62,7 +62,9 @@ def main():
     for k in range(n):
         Parpivot(A, B)
         GaussJordan(A, B)
-    #Soln = [-2.0 -2.0 1.0]
-    print("Solution of 2nd set of equation",B)
+    
+    print("Solution of 2nd set of equations",B)
 
 main()
+#The Soln of 1st set of equations = [3.0 1.0 -2.0]
+#The Soln of 2nd set of equations = [-2.0 -2.0 1.0]
