@@ -56,13 +56,15 @@ def main():
     # Taking transpose gives the inverse matrix
     Ainv = [[C[j][i] for j in range(3)] for i in range(3)]
 
-    #The inverse is [[-3.0, 3.0, -7.0],[1.0, 1.0, 0.0][1.0, 0.0, 1.0]]
+    #The inverse
     print("The inverse is:",Ainv)
     with open('MatrixA1.txt') as matA:
         A = []
         for line in matA:
             A.append([float(x) for x in line.split()])
-    #The matrix A*Ainv = [[1.0, 0.0, 0.0][0.0, 1.0, 0.0][0.0, 0.0, 1.0]]
-    MatrixMultiply(A,Ainv)
+   
+    MatrixMultiply("The matrix A*Ainv",A,Ainv)
 
 main()
+#The inverse is [[-3.0, 3.0, -7.0],[1.0, 1.0, 0.0][1.0, 0.0, 1.0]]
+#The matrix A*Ainv = [[1.0, 0.0, 0.0][0.0, 1.0, 0.0][0.0, 0.0, 1.0]]
